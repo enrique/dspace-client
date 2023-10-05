@@ -58,10 +58,10 @@ class DSpaceObject(BaseModel):
 
 
 class DSpaceCommunity(DSpaceObject):
-    archivedItemsCount: int
+    archivedItemsCount: Optional[int] = None
 
 class DSpaceCollection(DSpaceObject):
-    archivedItemsCount: int
+    archivedItemsCount: Optional[int] = None
 
 
 class DSpaceItem(DSpaceObject):
